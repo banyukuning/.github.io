@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berita - Desa Banyukuning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar scrolled">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand"><div class="brand-icon">BK</div><span>Desa Banyukuning</span></a>
+      <div class="navbar-menu">
+        <a href="index.html">Beranda</a><a href="profil-desa.html">Profil Desa</a><a href="data-desa.html">Data Desa</a><a href="berita.html" class="active">Berita</a><a href="anggaran.html">Anggaran</a><a href="umkm.html">UMKM</a><a href="galeri.html">Galeri</a><a href="peta.html">Peta</a><a href="pengaduan.html">Pengaduan</a>
+      </div>
+      <button class="navbar-toggle" aria-label="Menu"><i class="ri-menu-3-line"></i></button>
+    </div>
+  </nav>
+  <div class="navbar-mobile">
+    <button class="mobile-close" aria-label="Tutup"><i class="ri-close-line"></i></button>
+    <a href="index.html">Beranda</a><a href="profil-desa.html">Profil Desa</a><a href="data-desa.html">Data Desa</a><a href="berita.html" class="active">Berita</a><a href="anggaran.html">Anggaran</a><a href="umkm.html">UMKM</a><a href="galeri.html">Galeri</a><a href="peta.html">Peta</a><a href="pengaduan.html">Pengaduan</a>
+  </div>
+
+  <div class="page-header">
+    <h1>Berita Desa</h1>
+    <div class="breadcrumb"><a href="index.html">Beranda</a><span>/</span><span>Berita</span></div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">Berita & Informasi Terkini</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle fade-up">Informasi terbaru seputar kegiatan dan pembangunan Desa Banyukuning</p>
+
+      <div class="grid-3 fade-up">
+        <!-- Berita 1 -->
+        <div class="card berita-card">
+          <img src="images/berita1.png" alt="Musyawarah Desa" class="card-img">
+          <div class="card-body">
+            <div class="meta"><span><i class="ri-calendar-line"></i> 15 Feb 2026</span><span><i class="ri-user-line"></i> Admin</span></div>
+            <h3>Kisah Sukses Adi Tia Prabowo Membangun Usaha Kopi di Tengah Pandemi</h3>
+            <p>Berawal dari ketidakpastian di tengah pandemi, Adi Tia Prabowo yang biasa dipanggil Bowo justru menemukan kepastian dalam secangkir kopi. Ketika banyak orang...</p>
+            <button class="btn-selengkapnya" onclick="openBeritaModal(1)">Selengkapnya <i class="ri-arrow-right-s-line"></i></button>
+          </div>
+        </div>
+
+        <!-- Berita 2 -->
+        <div class="card berita-card">
+          <img src="images/berita2.jpeg" alt="Nyadran Dusun Mendongan" class="card-img">
+          <div class="card-body">
+            <div class="meta"><span><i class="ri-calendar-line"></i> 13 Feb 2026</span><span><i class="ri-user-line"></i> Admin</span></div>
+            <h3>Warga Dusun Mendongan Melakukan Tradisi Nyadran</h3>
+            <p>Tradisi Nyadran kembali digelar oleh warga Dusun Mendongan pada Jumat, 13 Februari 2026, sebagai wujud pelestarian nilai-nilai budaya dan kearifan lokal yang telah diwariskan secara turun-temurun...</p>
+            <button class="btn-selengkapnya" onclick="openBeritaModal(2)">Selengkapnya <i class="ri-arrow-right-s-line"></i></button>
+          </div>
+        </div>
+
+        <!-- Berita 3 -->
+        <div class="card berita-card">
+          <img src="images/berita3.jpeg" alt="Pelatihan Pembuatan Lilin Aromaterapi" class="card-img">
+          <div class="card-body">
+            <div class="meta"><span><i class="ri-calendar-line"></i> 26 Jan 2026</span><span><i class="ri-user-line"></i> Admin</span></div>
+            <h3>Pelatihan Pembuatan Lilin Aromaterapi untuk Warga Desa</h3>
+            <p>Mahasiswa Kuliah Kerja Nyata dari Universitas Negeri Semarang (KKN UNNES) dan Universitas Sebelas Maret (KKN UNS) berkolaborasi menyelenggarakan pelatihan pembuatan lilin aromaterapi berbahan...</p>
+            <button class="btn-selengkapnya" onclick="openBeritaModal(3)">Selengkapnya <i class="ri-arrow-right-s-line"></i></button>
+          </div>
+        </div>
+
+        <!-- Berita 4 -->
+        <div class="card berita-card">
+          <img src="images/berita4.jpeg" alt="Kerja Bakti Saluran Air" class="card-img">
+          <div class="card-body">
+            <div class="meta"><span><i class="ri-calendar-line"></i> 31 Jan 2026</span><span><i class="ri-user-line"></i> Admin</span></div>
+            <h3>Gotong Royong Bersih Saluran Air Sebelum Bulan Ramadhan</h3>
+            <p>Dalam rangka menyambut Bulan Ramadhan 1447 H, seluruh warga Desa Banyukuning melaksanakan kegiatan gotong royong bersih saluran air pada 31 Januari 2026. Kegiatan ini menjadi agenda bersama...</p>
+            <button class="btn-selengkapnya" onclick="openBeritaModal(4)">Selengkapnya <i class="ri-arrow-right-s-line"></i></button>
+          </div>
+        </div>
+
+        <!-- Berita 5 -->
+        <div class="card berita-card">
+          <img src="images/berita5.jpeg" alt="Posyandu Dusun Ploso" class="card-img">
+          <div class="card-body">
+            <div class="meta"><span><i class="ri-calendar-line"></i> 10 Feb 2026</span><span><i class="ri-user-line"></i> Admin</span></div>
+            <h3>Posyandu Lansia dan Balita Rutin Bulan Ini</h3>
+            <p>Kegiatan Posyandu Lansia dan Balita rutin bulan Februari 2026 telah dilaksanakan secara serentak di setiap dusun di Desa Banyukuning. Pelaksanaan posyandu ini menjadi bagian dari komitmen...</p>
+            <button class="btn-selengkapnya" onclick="openBeritaModal(5)">Selengkapnya <i class="ri-arrow-right-s-line"></i></button>
+          </div>
+        </div>
+
+        <!-- Berita 6 -->
+        <div class="card berita-card">
+          <img src="images/berita6.jpeg" alt="Festival Budaya" class="card-img">
+          <div class="card-body">
+            <div class="meta"><span><i class="ri-calendar-line"></i> 13 Feb 2026</span><span><i class="ri-user-line"></i> Admin</span></div>
+            <h3>Kesenian Tradisional Desa Banyukuning</h3>
+            <p>Kesenian tradisional kembali memeriahkan Desa Banyukuning melalui pagelaran Reog dan Kuda Lumping yang dilaksanakan di Dusun Mendongan pada 13 Februari 2026. Acara ini menjadi salah satu...</p>
+            <button class="btn-selengkapnya" onclick="openBeritaModal(6)">Selengkapnya <i class="ri-arrow-right-s-line"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BERITA MODAL -->
+  <div class="modal-overlay" onclick="closeModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="modalTitle">Judul Berita</h3>
+        <button class="modal-close" onclick="closeModal()"><i class="ri-close-line"></i></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImg" src="" alt="Berita">
+        <div class="meta" style="margin-bottom: 16px; font-size: 0.85rem; color: var(--gray-400);"><i class="ri-calendar-line"></i> <span id="modalDate">-</span></div>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h4>Desa Banyukuning</h4>
+          <p>Website resmi Pemerintah Desa Banyukuning, Kecamatan Bandungan, Kabupaten Semarang, Provinsi Jawa Tengah.</p>
+          <div style="margin-top: 12px;">
+            <div class="contact-item"><i class="ri-map-pin-2-fill"></i><span>Jl. Banyukuning, Jurang Belik, Krajan, Bandungan, Kabupaten Semarang, Jawa Tengah 50663</span></div>
+            <div class="contact-item"><i class="ri-phone-fill"></i><span>(0298) 7123-94</span></div>
+            <div class="contact-item"><i class="ri-mail-fill"></i><span>pemerintahdesabanyukuning@gmail.com</span></div>
+          </div>
+        </div>
+        <div class="footer-hours">
+          <h4>Jam Pelayanan</h4>
+          <ul>
+            <li><span>Senin - Kamis</span><span>08:00 - 15:00</span></li>
+            <li><span>Jumat</span><span>08:00 - 11:00</span></li>
+            <li><span>Sabtu & Minggu</span><span>Libur</span></li>
+            <!-- <li><span>Minggu</span><span>Libur</span></li> -->
+          </ul>
+        </div>
+        <div class="footer-surat">
+          <h4>Layanan Surat</h4>
+          <ul>
+            <li><a href="surat/akte kematian kelahiran.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Kelahiran/Kematian <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/ktp kk.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pengantar KTP <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/ktp kk.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pengantar KK <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/form perpindahan penduduk.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Perpindahan Penduduk <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat pernyataan perubahan elemen data penduduk.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pernyataan Perubahan Elemen Data Penduduk <i class="ri-external-link-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Media Sosial</h4>
+          <p class="social-text">Ikuti media sosial kami untuk informasi terbaru.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/desa_banyukuning" target="_blank" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="https://www.tiktok.com/@desa_banyukuning" target="_blank" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">&copy; 2026 UNNES GIAT 15. Seluruh hak cipta dilindungi.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
